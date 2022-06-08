@@ -1,0 +1,88 @@
+.active {
+  background-color: blueviolet;
+}
+
+.brand-logo.active {
+  background-color: transparent;
+}
+
+#map {
+  height: 500px;
+}
+
+/* extrait, possible de faire mieux */
+
+.movies-ref {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 64px !important;
+}
+
+.movies-ref img {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.movies-ref:hover {
+  background-color: #e3f2fd;
+}
+
+.movies-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.movies-list .movies-cover {
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid green;
+}
+
+.movies-list .movies-cover img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.movies-pill {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0.25em 0.4em;
+  margin: 0 0.25em;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border: 1px solid #28a745;
+}
+
+.movies-modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.movies-modal .modal-content {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  max-width: 800px;
+  background-color: white;
+  padding: 1em;
+}
